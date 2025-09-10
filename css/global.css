@@ -1,7 +1,7 @@
 /* GOOGLE FONTS */
 
-@import url("https://fonts.googleapis.com/css?family=Proza+Libre");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Milonga&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Milonga&display=swap");
 
 /* CUSTOM PROPERTIES */
 
@@ -11,8 +11,8 @@
   custom properties are always defined in :root (not in html).
 */
 :root {
-  --title-font-family: "Proza Libre", serif;
-  --default-font-family: "Roboto", sans-serif;
+  --title-font-family: "Milonga", serif;
+  --default-font-family: "Commissioner", sans-serif;
   /* 
     16px is the default font size set by browswers in the html tag.
     This should never be changed so that vision-impared users can override it.
@@ -21,13 +21,13 @@
     For example, if you want 20px, then set the size to 20/16 = 1.25rem.
   */
   --defatul-font-size: 1.25rem;
-  --default-text-color: #111;
+  --default-text-color: #f8ede3;
   --neutral-color: #4e4e4e;
 
   --primary-color: dodgerblue;
   --primary-color-dark: darkblue;
-  --primary-background-color: whitesmoke;
-  --secondary-background-color: burlywood;
+  --primary-background-color: #f5f5f5;
+  --secondary-background-color: #8d493a;
   --card-background-color: navajowhite;
 }
 

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My Bookstore</title>
+    <title>Bookspresso</title>
     <meta charset="utf-8" />
-    <meta name="description" content="The homepage for My Bookstore" />
+    <meta name="description" content="The homepage for Bookspresso" />
 
     <!-- Import font-awesome icons -->
     <link
@@ -27,106 +27,116 @@
   <body>
     <main>
       <header class="container">
-        <section class="bookstore-logo">
-          <a href="index.html">
-            <img
-              src="images/site/bookstore-logo.png"
-              alt="Another Bookstore Logo"
-              width="150px"
-              height="auto"
-            />
-          </a>
-        </section>
-        <section class="title-and-search-bar">
-          <h1 class="text-logo">Another Bookstore</h1>
-          <form action="category.html">
-            <input type="text" class="search-bar" /><br />
-            <input type="submit" class="button search-button" value="Search" />
-          </form>
-        </section>
-        <section class="header-dropdown-and-cart">
-          <button class="button">cart (0)</button>
-          <button class="button">login</button>
-          <div class="header-dropdown">
-            <button class="button categories-button">Categories</button>
-            <ul>
-              <li><a href="category.html?category=Classics">Classics</a></li>
-              <li><a href="category.html?category=Fantasy">Fantasy</a></li>
-              <li><a href="category.html?category=Mystery">Mystery</a></li>
-              <li><a href="category.html?category=Romance">Romance</a></li>
-            </ul>
-          </div>
-        </section>
+        <div class="header-content">
+          <section class="bookstore-logo">
+            <a href="index.html">
+              <img
+                src="images/site/bookspresso-logo.png"
+                alt="Bookspresso Logo"
+                width="150px"
+                height="auto"
+              />
+            </a>
+          </section>
+
+          <section class="title-and-search-bar">
+            <h1 class="text-logo">Bookspresso</h1>
+            <div class="search-container">
+              <form action="category.html">
+                <input
+                  type="text"
+                  class="search-bar"
+                  placeholder="Search books..."
+                />
+                <button type="submit" class="button search-button">
+                  <i class="icon-search"></i>
+                </button>
+              </form>
+            </div>
+          </section>
+
+          <section class="header-right">
+            <div class="user-info">
+              <span class="greeting">Hi, Marcus</span>
+              <a href="#" class="logout-link">Log out</a>
+            </div>
+
+            <button class="button cart-button">
+              <i class="icon-shopping-cart"></i>
+              <span class="cart-count">(0)</span>
+            </button>
+
+            <div class="header-dropdown">
+              <button class="button categories-button">
+                CATEGORIES
+                <i class="icon-chevron-down"></i>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="category.html?category=Classics">Classics</a></li>
+                <li><a href="category.html?category=Fantasy">Fantasy</a></li>
+                <li><a href="category.html?category=Mystery">Mystery</a></li>
+                <li><a href="category.html?category=Romance">Romance</a></li>
+              </ul>
+            </div>
+          </section>
+        </div>
       </header>
+
       <div class="home-page">
-        <section class="welcome-text flow-content container dark-background">
-          <h2>Welcome to Another Bookstore</h2>
-          <p>
-            Another Bookstore is a client-side application written in HTML and
-            CSS.
-          </p>
-          <p>
-            It includes a home page and a category page. Both pages have the
-            same header and footer.
-          </p>
-          <p>
-            You can navigate to the category page by choosing any category from
-            the dropdown menu in the header. You can navigate to the home page
-            by clicking on the logo in the header.
-          </p>
-          <p>Take some time and explore the code.</p>
-        </section>
-        <section class="category-images container">
-          <div class="category-image-items">
-            <a>
-              <img
-                src="images/categories/classics.jpg"
-                alt="Classics category"
-                width="180px"
-                height="180px"
-              />
-              <div>Classics</div>
-            </a>
-            <a>
-              <img
-                src="images/categories/fantasy.jpg"
-                alt="Fantasy category"
-                width="180px"
-                height="180px"
-              />
-              <div>Fantasy</div>
-            </a>
-            <a>
-              <img
-                src="images/categories/mystery.jpg"
-                alt="Mystery category"
-                width="180px"
-                height="180px"
-              />
-              <div>Mystery</div>
-            </a>
-            <a>
-              <img
-                src="images/categories/romance.jpg"
-                alt="Romance category"
-                width="180px"
-                height="180px"
-              />
-              <div>Romance</div>
-            </a>
+        <section class="hero-section">
+          <div class="hero-content">
+            <div class="welcome-text">
+              <h2>Shop our new selection!</h2>
+              <p>From over 5000+ books to choose from.</p>
+              <button class="button browse-button">BROWSE</button>
+            </div>
+            <div class="featured-books">
+              <div class="book-cover">
+                <img
+                  src="images/books/michael-vey.jpg"
+                  alt="Michael Vey: The Prisoner of Cell 25"
+                />
+              </div>
+              <div class="book-cover">
+                <img
+                  src="images/books/false-prince.jpg"
+                  alt="The False Prince"
+                />
+              </div>
+              <div class="book-cover">
+                <img
+                  src="images/books/harry-potter.jpg"
+                  alt="Harry Potter and the Sorcerer's Stone"
+                />
+              </div>
+            </div>
           </div>
         </section>
       </div>
+
       <footer class="container">
-        <section class="links">
-          <a href="index.html">about</a>
-          <a href="index.html">contact</a>
-          <a href="index.html">directions</a>
-        </section>
-        <section class="social-media-icons">
-          <a class="button">Facebook</a>
-          <a class="button">Twitter</a>
-        </section>
+        <div class="footer-content">
+          <section class="copyright">
+            <p>© 2025 Bookspresso</p>
+          </section>
+
+          <section class="links">
+            <a href="index.html">about</a>
+            <span class="separator">•</span>
+            <a href="index.html">directions</a>
+            <span class="separator">•</span>
+            <a href="index.html">contact</a>
+          </section>
+
+          <section class="social-media-icons">
+            <a href="#" class="social-link facebook">
+              <i class="icon-facebook"></i>
+            </a>
+            <a href="#" class="social-link twitter">
+              <i class="icon-twitter"></i>
+            </a>
+          </section>
+        </div>
       </footer>
     </main>
   </body>
